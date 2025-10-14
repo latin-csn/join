@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shop For You — your destination for curated fashion, lifestyle, and essentials." />
+  <link rel="icon" href="assets/img/favicon.png" />
+  <title>Shop For You — Discover Your Style</title>
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- 🔹 NAVBAR Placeholder -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="Shop For You Logo"><span class="brand">Shop For You</span></a>
+      <div class="menu" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/shop.html">Shop</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/faq.html">FAQ</a>
+      </div>
+      <div class="right">
+        <a class="btn ghost" data-nav-toggle>Menu</a>
+        <a class="btn" href="pages/shop.html">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 HERO SECTION -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Find Your Perfect Style</h1>
+        <p class="muted">Trendy, sustainable, and handpicked just for you — Shop For You brings fashion that speaks your vibe.</p>
+        <div class="hero-cta">
+          <a class="btn" href="pages/shop.html">Explore Now</a>
+          <a class="btn ghost" href="pages/about.html">Learn More</a>
+        </div>
+        <div class="kudos">
+          <span class="pill">Free Shipping</span>
+          <span class="pill">30-Day Returns</span>
+          <span class="pill">New Arrivals Weekly</span>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="card">
+          <img src="assets/img/hero-fashion.jpg" alt="Fashion collection" class="hero-feature-img" />
+          <div class="card-body">
+            <h3>Spring ‘25 Collection</h3>
+            <p class="muted">Discover limited-edition looks inspired by bold confidence.</p>
+            <div style="display:flex;gap:8px;margin-top:8px;">
+              <a class="btn" href="#">Shop Now</a>
+              <a class="btn ghost" href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🔹 FEATURED COLLECTIONS -->
+  <section id="featured" class="section container">
+    <h2>Featured Picks</h2>
+    <p class="muted">Handpicked styles that define the moment.</p>
+
+    <div class="cards-grid">
+      <article class="card product-card">
+        <img src="assets/img/handbag.avif" alt="Luxury Handbag" />
+        <div class="card-body">
+          <h3>Luxury Handbag</h3>
+          <p class="muted">Timeless craftsmanship with eco-friendly materials.</p>
+          <div class="card-foot">
+            <div class="price">$189.00</div>
+            <div><a class="btn ghost" href="#">View</a></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product-card">
+        <img src="assets/img/shoes.jpg" alt="Designer Sneakers" />
+        <div class="card-body">
+          <h3>Designer Sneakers</h3>
+          <p class="muted">Bold comfort that redefines streetwear luxury.</p>
+          <div class="card-foot">
+            <div class="price">$129.00</div>
+            <div><a class="btn ghost" href="#">View</a></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product-card">
+        <img src="assets/img/womon.jpg" alt="Women’s Blazer" />
+        <div class="card-body">
+          <h3>Women’s Blazer</h3>
+          <p class="muted">Effortless chic for work or weekend.</p>
+          <div class="card-foot">
+            <div class="price">$159.00</div>
+            <div><a class="btn ghost" href="#">View</a></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 🔹 TESTIMONIALS -->
+  <section class="section alt container">
+    <h2>What Our Shoppers Say</h2>
+    <p class="muted">Trusted by thousands of fashion lovers worldwide.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <p>“Absolutely love the styles! Everything feels premium and unique.”</p>
+        <strong>— Sarah K.</strong>
+      </div>
+      <div class="card">
+        <p>“Fast delivery and high-quality materials. I’m obsessed!”</p>
+        <strong>— Leo M.</strong>
+      </div>
+      <div class="card">
+        <p>“The best online shopping experience I’ve had in years.”</p>
+        <strong>— Anya D.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 CTA SECTION -->
+  <section class="section container" style="text-align:center;">
+    <h2>Ready to Upgrade Your Wardrobe?</h2>
+    <p class="muted">Join thousands who trust Shop For You to bring them the latest in fashion & lifestyle.</p>
+    <a class="btn" href="pages/shop.html" style="margin-top:10px;">Start Shopping</a>
+  </section>
+
+  <!-- 🔹 FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Shop For You. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a> •
+        <a href="terms.html">Terms</a> •
+        <a href="sitemap.html">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
